@@ -37,7 +37,7 @@ const ContactSection = () => {
 
                 <div className="md:col-span-3 bg-white p-14 flex flex-col justify-around">
                     <img
-                        src="https://i.sstatic.net/HILmr.png"
+                        src="/images/Maps.png"
                         alt="contact"
                         className="rounded-xl  max-h-56 object-cover"
                     />
@@ -55,8 +55,8 @@ const ContactSection = () => {
                     <div className="flex gap-4 text-xl">
                         <img src="/images/Instagram.png" alt="instagram" className="w-4 h-4" />
                         <img src="/images/Twitter.png" alt="twitter" className="w-4 h-4" />
-                        <img src="/images/Facebook.png" alt="facebook" className="w-4 h-4" />
-                        <img src="/images/Youtube.png" alt="youtube" className="w-4 h-4" />
+                        <img src="/images/FacebookT.png" alt="facebook" className="w-4 h-4" />
+                        <img src="/images/Youtubet.png" alt="youtube" className="w-4 h-4" />
                     </div>
                 </div>
             </div>

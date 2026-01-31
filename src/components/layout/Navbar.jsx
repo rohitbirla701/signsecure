@@ -77,17 +77,17 @@ const Navbar = () => {
                         {/* DARK TOGGLE */}
                         <button
                             onClick={() => setDark(!dark)}
-                            className="p-2 rounded-full bg-gray-700 hover:bg-gray-600 transition"
+                            className="p-2 rounded-full cursor-pointer bg-gray-700 hover:bg-gray-600 transition"
                         >
                             {dark ? <FaSun /> : <FaMoon />}
                         </button>
                     </div>
                     {/* BUTTONS */}
                     <div className="flex gap-4">
-                        <button className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-full">
+                        <button className="bg-blue-600 cursor-pointer hover:bg-blue-700 px-4 py-2 rounded-full">
                             Contact Sales
                         </button>
-                        <button className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-full">
+                        <button className="bg-blue-600 cursor-pointer hover:bg-blue-700 px-4 py-2 rounded-full">
                             Free Trial
                         </button>
                     </div>

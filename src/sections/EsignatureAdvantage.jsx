@@ -27,7 +27,7 @@ const EsignatureAdvantage = () => {
                         the industry's standard dummy text ever since the <br className="hidden sm:block" />
                         1500s.
                     </p>
-                    <button className="bg-blue-600 hover:bg-blue-500 cursor-pointer transition text-white px-5 py-2 rounded-full text-sm font-medium">
+                    <button className="relative bg-blue-600 cursor-pointer hover:bg-blue-500  transition text-white px-5 py-2 rounded-full text-sm font-medium">
                         Request demo →
                     </button>
                 </div>
