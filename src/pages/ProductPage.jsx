@@ -9,13 +9,19 @@ const ProductPage = () => {
     return (
         <div className="bg-[#0D101F] text-white overflow-x-hidden">
             {/* HERO */}
-            <section className="relative h-[700px] w-full ">
+            <section className="relative h-[500px] md:h-[700px] w-full ">
                 {/* 🔹 ONE BACKGROUND IMAGE */}
                 <img
                     src="/images/manC.png"
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="
+    absolute inset-0
+    w-full h-full
+    object-contain sm:object-cover
+    bg-black
+  "
                     alt="Hero Background"
                 />
+
 
                 {/* 🔹 OVERLAY */}
                 <div className="absolute inset-0 bg-black/60" />
@@ -26,7 +32,7 @@ const ProductPage = () => {
                 </div>
 
                 {/* 🔹 CONTENT ON IMAGE */}
-                <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-5 pt-24 sm:pt-28 lg:pt-0">
+                <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-5 pt-10 sm:pt-28 lg:pt-0">
                     <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold">
                         Product
                     </h1>
@@ -44,7 +50,38 @@ const ProductPage = () => {
                     </h2>
                 </div>
 
-                <img src="/images/Rectangle347Sketch.png" className="mx-auto max-w-full h-auto mb-16 px-5" />
+                <div className="relative flex justify-center mb-16 px-5">
+                    {/* Base Image */}
+                    <img
+                        src="/images/Rectangle347Sketch.png"
+                        className="max-w-full h-auto"
+                        alt="Base"
+                    />
+
+                    {/* Center Overlay Image */}
+                    <div
+                        className="
+    absolute
+    top-1/2 left-1/2
+    -translate-x-1/2 -translate-y-1/2
+    w-20 h-20 sm:w-24 sm:h-24
+    bg-white
+    rounded-full
+    flex items-center justify-center
+    shadow-lg
+    border-8
+    border-[#DEDEDE]
+  "
+                    >
+                        <img
+                            src="/icons/Vectorplay.png"
+                            className="w-6 h-6 sm:w-8 sm:h-8"
+                            alt="Play"
+                        />
+                    </div>
+
+                </div>
+
 
                 <div className="flex flex-col lg:flex-row justify-around px-5 gap-12">
                     <div className="max-w-3xl">
