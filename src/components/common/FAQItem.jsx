@@ -2,28 +2,25 @@ const FAQItem = ({ title, desc, open, onClick }) => {
     return (
         <div
             onClick={onClick}
-            className={`
+            className={` relative z-60
         cursor-pointer
-        rounded-xl
-        px-5 py-4
+        rounded-lg
+        px-5 py-10
         border
         transition-all duration-300
-        bg-[#0b1224]
-        ${open ? "border-blue-600 shadow-blue-600/20 shadow-lg" : "border-white/10"}
-      `}
-        >
-            <div className="flex justify-between items-center">
-                <h4 className="text-sm font-bold text-white">
-                    {title}
-                </h4>
-
-                <span className="text-xl text-white font-bold">
+        bg-[#FFFFFF1A]
+        ${open ? " shadow-blue-600/20 shadow-lg" : "border-white/10"}`}>
+            <div className="flex gap-8 text-center items-center">
+                <span className=" text-2xl text-white font-bold">
                     {open ? "−" : "+"}
                 </span>
+                <h4 className="md:text-lg text-md font-bold text-white">
+                    {title}
+                </h4>
             </div>
 
             {open && (
-                <p className="text-sm text-gray-500 font-normal mt-3 leading-relaxed">
+                <p className="md:text-md ml-12 text-sm text-[#EFEFEF] font-normal mt-3 leading-relaxed">
                     {desc}
                 </p>
             )}

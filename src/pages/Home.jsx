@@ -10,7 +10,7 @@ import Contact from '../sections/Contact'
 
 const Home = () => {
     return (
-        <div className="min-h-screen bg-gray-950 text-white">
+        <div className="min-h-screen bg-[#0D101F]">
             <Hero />
             <Products />
             <DocumentJourney />

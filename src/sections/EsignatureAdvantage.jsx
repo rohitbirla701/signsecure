@@ -6,16 +6,18 @@ const EsignatureAdvantage = () => {
 
     return (
         <section className="relative from-[#020617] via-[#050b1e] to-[#0b2a6f] ">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#0b2a6f,transparent_30%)]"></div>
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,#0b2a6f,transparent_30%)]"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#0077FFAD,transparent_30%)]"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,#0077FFAD,transparent_30%)]"></div>
             <div
                 className="p-4 md:p-0 md:px-0 sm:pr-6 lg:pr-10 grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
                 <div className="
-            bg-linear-to-r from-[#081d49] via-[#050b1e] to-black
-            rounded-r-2xl
-            p-6 sm:p-8 lg:p-13
-            pb-12 sm:pb-16 lg:pb-28
-            shadow-xl">
+  bg-linear-to-r from-[#081d49] via-[#00000075] to-[#00000075]
+  rounded-4xl
+  p-6 sm:p-8 lg:p-13
+  pb-12 sm:pb-16 lg:pb-28
+  shadow-xl
+">
+
                     <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4">
                         The only eSignature solution <br />
                         that offers unlimited users <br />

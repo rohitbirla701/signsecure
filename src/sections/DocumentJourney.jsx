@@ -1,9 +1,9 @@
 const SimplifiedJourney = () => {
     return (
-        <section className="relative overflow-hidden bg-[#050b1e] py-16 sm:py-20 lg:py-24">
+        <section className="relative overflow-hidden bg-[#0D101F] py-16 sm:py-20 lg:py-24">
             {/* BLUE SHADE (BOTTOM) */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,#0b2a6f,transparent_30%)]"></div>
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,#0b2a6f,transparent_20%)]"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,#0077FF,transparent_20%)]"></div>
+            {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,#0b2a6f,transparent_20%)]"></div> */}
 
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
                 <div className="text-center mb-12 sm:mb-16">
