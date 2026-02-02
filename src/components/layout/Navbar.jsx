@@ -61,7 +61,7 @@ const Navbar = ({ transparent = false }) => {
                         Use Cases
                     </Link>
                     <Link to="/about" className="hover:text-blue-400 transition">
-                        About Us
+                        Pricing
                     </Link>
                     <li>Blog</li>
                     <Link to="/about" className="hover:text-blue-400 transition">
@@ -104,11 +104,11 @@ const Navbar = ({ transparent = false }) => {
                                 Use Cases
                             </Link>
                             <Link to="/about" className="hover:text-blue-400 transition">
-                                About Us
+                                Pricing
                             </Link>
                             <li>Blog</li>
                             <Link to="/about" className="hover:text-blue-400 transition">
-                                Pricing
+                                About Us
                             </Link>
                             {menuItems.map((item) => (
                                 <li

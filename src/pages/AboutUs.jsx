@@ -218,50 +218,70 @@ const AboutUs = () => {
 
 
                 {/* WhyChooseUs */}
-                <section className="relative">
-                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#0077FFAD,transparent_25%)]"></div>
-                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,#0077FFAD,transparent_30%)]"></div>
-                    <WhyChooseUs variant="about" />
-                    <div className=" items-center px-4 text-center leading-8 pb-13 text-2xl font-normal">
-                        <p>Let Sign Secure make your business mobile and enhance how you sign PDF documents with our Digital <br /> Signature Tool and Bulky PDF Digital Signature services.</p>
-                    </div>
+               <section className="relative overflow-hidden">
+    {/* BACKGROUND GRADIENTS */}
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#0077FFAD,transparent_35%)] opacity-70 sm:opacity-100"></div>
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,#0077FFAD,transparent_40%)] opacity-70 sm:opacity-100"></div>
 
-                </section>
+    {/* CONTENT */}
+    <div className="relative z-10">
+        <WhyChooseUs variant="about" />
+
+        <div className="flex items-center justify-center px-4 sm:px-6 lg:px-10 text-center pb-10 sm:pb-12 lg:pb-13">
+            <p className="max-w-6xl text-base sm:text-lg lg:text-2xl font-normal leading-6 sm:leading-7 lg:leading-8">
+                Let Sign Secure make your business mobile and enhance how you sign PDF documents
+                with our Digital <br className="hidden sm:block" />
+                Signature Tool and Bulky PDF Digital Signature services.
+            </p>
+        </div>
+    </div>
+</section>
+
                 <Testimonials showShade={false} />
 
-                <section className="relative overflow-hidden
-    bg-linear-to-br from-[#020617] via-[#050b1e] to-[#0b2a6f]
-    py-24
-">
+                <section
+                    className="
+        relative overflow-hidden
+        bg-linear-to-br from-[#020617] via-[#050b1e] to-[#0b2a6f]
+        py-16 sm:py-20 lg:py-24
+    "
+                >
+                    {/* BIG TOP DOME */}
                     <div
                         className="
-        absolute
-        top-10
-        left-1/2
-        -translate-x-1/2
-        w-[2507px]
-        h-[2507px]
-        border-t
-        border-l
-        border-r
-        border-[#13172A]
-        bg-[#13172A]
-        rounded-t-full
-        pointer-events-none
+            absolute
+            top-6 sm:top-10
+            left-1/2
+            -translate-x-1/2
+            w-[900px] h-[900px]
+            sm:w-[1600px] sm:h-[1600px]
+            lg:w-[2507px] lg:h-[2507px]
+            border-t border-l border-r
+            border-[#13172A]
+            bg-[#13172A]
+            rounded-t-full
+            pointer-events-none
         "
                     />
 
                     {/* CONTENT */}
-                    <section className="relative z-20 space-y-32">
-                        <div className="absolute inset-0 -top-23 bg-[radial-gradient(circle_at_top_left,#0152FF,transparent_30%)]"></div>
-                        <div className="absolute inset-0 -bottom-55 bg-[radial-gradient(circle_at_bottom_right,#0A49E8,transparent_30%)]"></div>
-                        {/* <div className="absolute inset-0 top-36 bg-[radial-gradient(circle_at_top_right,#0A49E8,transparent_40%)]"></div> */}
+                    <section className="relative z-20 space-y-20 sm:space-y-24 lg:space-y-32">
+                        {/* GRADIENTS */}
+                        <div className="absolute inset-0 -top-20 sm:-top-32 bg-[radial-gradient(circle_at_top_left,#0152FF,transparent_40%)] opacity-70 sm:opacity-100"></div>
+                        <div className="absolute inset-0 -bottom-32 sm:-bottom-55 bg-[radial-gradient(circle_at_bottom_right,#0A49E8,transparent_40%)] opacity-70 sm:opacity-100"></div>
+
                         {/* FAQ PART */}
-                        <FAQSection variant="about" />
+                        <div className="relative px-4 sm:px-6 lg:px-10 max-w-7xl mx-auto">
+                            <FAQSection variant="about" />
+                        </div>
+
                         {/* CONTACT PART */}
-                        <ContactSection variant="about" />
+                        <div className="relative px-4 sm:px-6 lg:px-10 max-w-7xl mx-auto">
+                            <ContactSection variant="about" />
+                        </div>
                     </section>
                 </section>
+
             </section>
         </div>
     );

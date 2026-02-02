@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer className="bg-[#050b1e] text-gray-400 pt-16 md:pt-20">
-            <div className="max-w-7xl mx-auto px-5 md:px-20 flex flex-col md:flex-row justify-between gap-12">
+        <footer className="relative bg-[#050b1e] text-gray-400 pt-16 md:pt-20">
+            <div className="max-w-7xl mx-auto px-5 md:px-12 flex flex-col md:flex-row justify-between gap-12">
                 <div className="md:col-span-2">
                     <Link to="/">
                         <img src="/images/logo.png" alt="logo" className="w-28 h-24 mb-5" />
@@ -49,15 +49,15 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="border-t border-white mt-12 mx-5 md:mx-18"></div>
+            <div className="border-t border-white mt-12 mx-4 md:mx-20"></div>
             <div className="max-w-7xl mx-auto px-5 md:px-16 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
                 <p className="text-xs md:text-sm text-gray-300 text-center md:text-left">
                     © 2023 SignSecure. All rights reserved.
                 </p>
                 <div className="flex  gap-4 text-lg">
-                    <img src="/images/Instagram (1).png" alt="instagram" className="w-6 h-6" />
-                    <img src="/images/facebookb.png" alt="facebook" className="w-6 h-6" />
-                    <img src="/images/youtube.png" alt="youtube" className="w-6 h-6" />
+                    <img src="/images/Instagram (1).png" alt="instagram" className="cursor-pointer w-6 h-6" />
+                    <img src="/images/facebookb.png" alt="facebook" className="cursor-pointer w-6 h-6" />
+                    <img src="/images/youtube.png" alt="youtube" className="cursor-pointer w-6 h-6" />
                 </div>
             </div>
         </footer>
