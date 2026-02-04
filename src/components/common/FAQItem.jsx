@@ -8,7 +8,8 @@ const FAQItem = ({ title, desc, open, onClick }) => {
         px-5 py-10
         border
         transition-all duration-300
-        bg-[#FFFFFF1A]
+        dark:bg-[#FFFFFF1A]
+        bg-[#5A9AD3]
         ${open ? " shadow-blue-600/20 shadow-lg" : "border-white/10"}`}>
             <div className="flex gap-8 text-center items-center">
                 <span className=" text-2xl text-white font-bold">

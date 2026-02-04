@@ -6,17 +6,17 @@ const ContactSection = ({ variant = "home" }) => {
     return (
         <section
             id="Contact"
-            className={`w-full relative z-60 ${
-                isHome ? "bg-[#13172A] py-16 sm:py-20 lg:py-24 px-5" : "bg-transparent py-12 sm:py-16"
-            }`}
+            className={`w-full relative z-60 ${isHome ? "bg-white backdrop-blur-none dark:bg-[#13172A] py-16 sm:py-20 lg:py-24 px-5" : "bg-transparent py-12 sm:py-16"
+                }`}
         >
+            {/* <div className="absolute inset-0 dark:bg-[radial-gradient(circle_at_top_right,#0b2a6f,transparent_10%)]"></div> */}
             <div className="
                 max-w-6xl mx-auto
                 rounded-2xl overflow-hidden shadow-lg
                 grid grid-cols-1 md:grid-cols-5
             ">
                 {/* LEFT SIDE (FORM) */}
-                <div className="md:col-span-2 bg-blue-600 p-6 sm:p-8 lg:p-10 text-white">
+                <div className="md:col-span-2 dark:bg-blue-600 bg-[#3687CC] p-6 sm:p-8 lg:p-10 text-white">
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
                         Get in touch
                     </h2>

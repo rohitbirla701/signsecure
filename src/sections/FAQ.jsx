@@ -46,22 +46,22 @@ const FAQSection = ({ variant = "home" }) => {
     return (
         <section
             className={`relative overflow-hidden ${isHome
-                ? "bg-[#0000001A] py-24 bg-linear-to-br from-[#020617] via-[#050b1e] to-[#0b2a6f]"
+                ? ""
                 : "bg-transparent"
                 }`}
         >
             <div
                 className={`${isHome
-                    ? "absolute top-10 left-1/2 -translate-x-1/2 w-[2507px] h-[1500px] border-t border-l border-r  rounded-t-full pointer-events-none bg-[#13172A]"
+                    ? "absolute top-10 left-1/2 -translate-x-1/2 w-[2507px] h-[1500px] border-t border-l border-r border-[#A3D5FF]/25  rounded-t-full pointer-events-none bg-[#A3D5FF]/25  dark:bg-[#13172A] dark:border-[#13172A] backdrop-blur-none"
                     : ""
                     }`}
             />
-            <div className="relative  max-w-6xl mx-auto px-10">
-                <h2 className="md:text-5xl text-3xl font-bold text-white text-center mb-14">
+            <div className="relative">
+                <h2 className="md:text-5xl text-3xl pt-24 px-10 font-bold dark:text-white text-[#3687CC] text-center mb-14">
                     Frequently Ask Questions
                 </h2>
                 <div
-                    className={`grid grid-cols-1 md:grid-cols-2 gap-10 ${variant === "home" ? "mb-20" : ""
+                    className={`grid grid-cols-1 md:grid-cols-2 px-7 lg:px-32 gap-10 ${variant === "home" ? "mb-20" : ""
                         }`}
                 >
 
@@ -93,15 +93,17 @@ const FAQSection = ({ variant = "home" }) => {
                     </div>
                 </div>
                 {variant === "home" && (
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
-                        <div>
-                            <h3 className="text-4xl font-bold text-white mb-4">
+                    <div className="relative grid grid-cols-1 md:grid-cols-2 py-14 lg:py-20 px-16 bg-white dark:bg-black/10 backdrop-blur-md gap-14 items-center">
+                        <div className="absolute inset-0 dark:bg-[radial-gradient(circle_at_top_right,#0b2a6f,transparent_40%)]"></div>
+                        <div className="absolute inset-0 dark:bg-[radial-gradient(circle_at_bottom_right,#0b2a6f,transparent_40%)]"></div>
+                        <div className="w-full">
+                            <h3 className="relative text-2xl md:text-5xl lg:leading-16 font-bold dark:text-white text-blue-600 mb-5">
                                 Integrate eSignature <br />
                                 with the apps and CRMs <br />
                                 you already use
                             </h3>
 
-                            <p className="text-md font-normal text-white leading-relaxed">
+                            <p className="text-md md:text-2xl font-normal text-[#6B6B6B] lg:leading-9 mb-10">
                                 Lorem ipsum is simply dummy text of the printing <br />
                                 and typesetting industry. Lorem ipsum has been <br />
                                 the industry’s standard dummy text ever since the <br />
@@ -113,7 +115,7 @@ const FAQSection = ({ variant = "home" }) => {
                             {/* BLUE SHADE */}
                             <div
                                 className="
-                absolute
+                dark:absolute
                 -top-10
                 left-1/2
                 -translate-x-1/2
@@ -125,18 +127,18 @@ const FAQSection = ({ variant = "home" }) => {
                             />
 
                             {/* LOGOS */}
-                            <div className="relative grid grid-cols-3 gap-4">
+                            <div className="relative grid grid-cols-3 gap-2 bottom-28 dark:bottom-14">
                                 {visibleLogos.map((logo, i) => (
                                     <div
                                         key={i}
                                         className="
-                        bg-white
+                        dark:bg-white
                         h-15
                         rounded-xl
                         flex
                         items-center
                         justify-center
-                        shadow-md
+                        dark:shadow-md
                         transition
                         hover:shadow-blue-500/40"
                                     >

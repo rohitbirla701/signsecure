@@ -47,7 +47,7 @@ const cards = [
 
 const AboutUs = () => {
     return (
-        <div className="bg-[#090B15] text-white">
+        <div className="bg-[#090B15] py-9 text-white">
 
             {/* SECTION 1 – HERO */}
             <section className="relative h-full py-20 px-4  text-center">

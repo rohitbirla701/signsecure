@@ -43,7 +43,7 @@ const CaseStudy = () => {
                             bg-[radial-gradient(circle_at_center,#0033FF82,transparent_45%)] blur-[180px] pointer-events-none"/>
             {/* ================= HERO SECTION ================= */}
             <section
-                className=" relative w-full min-h-[60vh] sm:min-h-[65vh] md:min-h-[70vh] lg:min-h-[80vh] xl:min-h-[90vh] overflow-hidden">
+                className=" relative w-full min-h-[60vh] sm:min-h-[65vh] md:min-h-[70vh] lg:min-h-[100vh] xl:min-h-[90vh] overflow-hidden">
                 <img
                     src="/images/casestudy.png"
                     className=" absolute inset-0 w-full h-full z-20 object-contain sm:object-cover bg-black" alt="Hero Background" />
@@ -70,7 +70,7 @@ const CaseStudy = () => {
             </div>
 
             {/* ================= SECTION 1 ================= */}
-            <div className="rounded-4xl px-4 sm:px-8 md:px-16 lg:px-28 bg-[linear-gradient(180deg,rgba(0,0,0,0.38)_0%,rgba(102,102,102,0)_100%)]">
+            <div className="rounded-4xl px-4 py-4 sm:px-8 md:px-16 lg:px-28 bg-[linear-gradient(180deg,rgba(0,0,0,0.38)_0%,rgba(102,102,102,0)_100%)]">
                 <section className="relative grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-14 items-center">
                     <div className="absolute inset-0 -right-28 bg-[radial-gradient(circle_at_100%_30%,#0077FFAD,transparent_20%)] hidden md:block"></div>
 
@@ -140,7 +140,7 @@ const CaseStudy = () => {
                                 and control to invoice processing:
                             </p>
 
-                            <div className="flex flex-col sm:flex-row gap-6 lg:gap-14 mt-8 lg:mt-12">
+                            <div className="flex flex-col sm:flex-row gap-8 lg:gap-14 mt-8 lg:mt-12">
                                 {/* ICONS */}
                                 <div className="flex sm:flex-col gap-13 md:gap-20 justify-center">
                                     {[1, 2, 3, 4, 5].map(i => (
@@ -263,7 +263,7 @@ const CaseStudy = () => {
                 </p>
 
                 {/* CARDS GRID */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 place-items-center mb-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-8 lg:gap-10 place-items-center mb-8">
                     {outcomes.map((item, i) => (
                         <div
                             key={i}
